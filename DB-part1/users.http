@@ -1,0 +1,31 @@
+### Get all users
+GET http://localhost:3000/users
+Accept: application/json
+
+
+### Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com"
+}
+
+###
+
+### Get user preferences
+GET http://localhost:3000/users/1/preferences
+Accept: application/json
+
+###
+
+### Create user preferences
+POST http://localhost:3000/users/1/preferences
+Content-Type: application/json
+
+{
+  "languageCode": "en",
+  "preferredCommunication": 1,
+  "userId": 1
+}
